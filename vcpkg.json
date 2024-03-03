@@ -1,6 +1,5 @@
 {
     "dependencies": [
-        "anacortes",
-        "fmt"
+        "anacortes"
     ]
 }

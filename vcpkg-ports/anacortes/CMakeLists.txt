@@ -16,6 +16,7 @@ include_directories(include)
 install(DIRECTORY include/anacortes DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
 
 add_library(anacortes STATIC ${ANACORTES_SOURCES})
+target_link_libraries(anacortes PRIVATE fmt::fmt)
 
 install(TARGETS anacortes
         EXPORT anacortes_targets
